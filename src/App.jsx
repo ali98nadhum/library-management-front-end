@@ -1,7 +1,15 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router';
+import LoginPage from "./pages/LoginPage/LoginPage"
+
+
 function App() {
   return (
     <>
-      <h1 className="bg-sky-700 font-bold">Hello world</h1>
+      <Router>
+        <Routes>
+          <Route path={"/auth/login"} element={ <LoginPage/> } />
+        </Routes>
+      </Router>
     </>
   );
 }
