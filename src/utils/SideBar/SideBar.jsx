@@ -5,6 +5,7 @@ import { IoIosAddCircleOutline } from "react-icons/io";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoSettingsOutline } from "react-icons/io5";
 import { AiOutlineLogout } from "react-icons/ai";
+import { FaRegUser } from "react-icons/fa";
 import "./sideBar.css";
 
 
@@ -14,7 +15,7 @@ const SideBar = () => {
     <div className="h-screen w-56 p-5">
       {/* user avatar */}
       <div className="flex justify-center flex-col items-center">
-        <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-r from-orange-500 to-orange-700 text-white text-3xl font-extrabold shadow-xl transition duration-300 hover:scale-110 border-2 border-white">
+        <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-r from-orange-500 to-orange-700 text-white text-3xl font-extrabold shadow-xl transition duration-300 hover:scale-110 border-2 border-green-400">
           A
         </div>
         <p className="mt-4 text-white">alinadhum_</p>
@@ -31,20 +32,14 @@ const SideBar = () => {
           </li>
           <li>
             <Link to={''} className="links-sidbar">
-              <IoIosAddCircleOutline />
-              <p>Add book</p>
-            </Link>
-          </li>
-          <li>
-            <Link to={''} className="links-sidbar">
               <MdOutlineShoppingCart />
               <p>Order</p>
             </Link>
           </li>
           <li>
             <Link to={''} className="links-sidbar">
-              <IoIosAddCircleOutline />
-              <p>Add order</p>
+              <FaRegUser />
+              <p>Employees</p>
             </Link>
           </li>
           <li>
@@ -55,7 +50,7 @@ const SideBar = () => {
           </li>
         </ul>
         {/* Logout btn */}
-        <Link to={''} className="flex items-center gap-8 text-white p-3 mt-32 bg-red-700 transition duration-300 rounded-lg hover:bg-red-400">
+        <Link to={''} className="flex items-center gap-8 text-white p-3 mt-52 bg-red-700 transition duration-300 rounded-lg hover:bg-red-400">
           <AiOutlineLogout />
           <p>Logout</p>
         </Link>
