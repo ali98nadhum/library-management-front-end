@@ -1,0 +1,17 @@
+
+
+.links-sidbar{
+   padding: 10px;
+   margin: 10px 0;
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   transition: 0.3s;
+   color: white;
+}
+
+.links-sidbar:hover{
+    background-color: #ffffff55;
+}
+

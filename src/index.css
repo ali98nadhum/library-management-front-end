@@ -6,11 +6,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Almarai', sans-serif;
 }
 
-
-.side{
-  width: 200px;
-  background-color: red;
-  min-height: 100vh;
+body{
+  background-color: #1B2A49;
 }
