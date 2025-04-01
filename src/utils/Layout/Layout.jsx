@@ -8,9 +8,11 @@ const Layout = () => {
     const hideHeaderPaths = ["/auth/login"];
   return (
     <>
-    {/* {!hideHeaderPaths.includes(location.pathname) && <Header />} */}
+    {!hideHeaderPaths.includes(location.pathname) && <Header />}
+    <div className='flex'>
     {!hideHeaderPaths.includes(location.pathname) && <SideBar />}
     <Outlet />
+  </div>
   </>
   )
 }
